@@ -148,7 +148,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 initial={shouldReduceMotion ? { scale: 1 } : { scale: 1.06 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1.4, delay: 0.35, ease: EASE_PREMIUM }}
-                src="/src/assets/images/hero_highrise_gala_1791518771053.jpg"
+                src="/images/hero_highrise_gala_1791518771053.jpg"
                 alt="Highrise International Grand Gala Stage Production"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
