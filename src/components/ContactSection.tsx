@@ -79,7 +79,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialInterest 
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <ScrollReveal direction="up" delay={0.05}>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold uppercase tracking-wider mb-4 border border-sky-100">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/70 backdrop-blur-xl border border-white/80 text-sky-900 text-xs font-semibold uppercase tracking-wider mb-4 shadow-[0_2px_12px_rgba(14,165,233,0.08),inset_0_1px_1px_rgba(255,255,255,0.95)]">
               <span>Direct Commercial Engagement</span>
               <span aria-hidden="true" className="text-slate-300">/</span>
               <span>Get in Touch</span>

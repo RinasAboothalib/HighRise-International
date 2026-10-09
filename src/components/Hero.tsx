@@ -26,13 +26,17 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       ref={containerRef}
       className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-b from-sky-50/70 via-white to-slate-50 min-h-[92vh] flex flex-col justify-between"
     >
-      {/* Decorative ambient light circles with subtle parallax */}
+      {/* Decorative ambient glass light orbs with subtle parallax */}
       <motion.div
         style={{ y: shouldReduceMotion ? 0 : bgY }}
-        className="absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-gradient-to-tr from-sky-200/40 via-cyan-100/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"
+        className="absolute top-10 left-1/4 -translate-x-1/2 w-[700px] h-[480px] bg-gradient-to-tr from-sky-200/45 via-cyan-100/35 to-transparent rounded-full blur-3xl pointer-events-none -z-10"
+      />
+      <motion.div
+        style={{ y: shouldReduceMotion ? 0 : bgY }}
+        className="absolute top-24 right-6 w-[560px] h-[440px] bg-gradient-to-bl from-blue-200/30 via-sky-100/30 to-indigo-50/20 rounded-full blur-3xl pointer-events-none -z-10"
       />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 my-auto w-full">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 my-auto w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Column with Staggered Entrance */}
           <motion.div
@@ -42,14 +46,14 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             }}
             className="lg:col-span-7"
           >
-            {/* 1. Kicker / Trust Pill Reveal */}
+            {/* 1. Kicker / Trust Glass Pill Reveal */}
             <motion.div
               initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1, ease: EASE_PREMIUM }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-100/80 border border-sky-200/80 text-sky-800 text-xs font-semibold mb-6 shadow-xs"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur-xl border border-white/80 text-sky-900 text-xs font-semibold mb-6 shadow-[0_4px_20px_rgba(14,165,233,0.1),inset_0_1px_1px_rgba(255,255,255,0.95)]"
             >
-              <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse shadow-[0_0_8px_rgba(14,165,233,0.8)]" />
               <span>Established 2007 · Malé, Maldives & Colombo, Sri Lanka</span>
             </motion.div>
 
@@ -97,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 whileHover={shouldReduceMotion ? {} : { scale: 1.02, y: -1 }}
                 whileTap={shouldReduceMotion ? {} : { scale: 0.98 }}
                 onClick={() => onNavigate('services')}
-                className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-700 hover:text-sky-600 bg-white hover:bg-sky-50 border border-slate-200 rounded-full transition-colors shadow-xs active:scale-95"
+                className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-700 hover:text-sky-600 bg-white/70 backdrop-blur-xl hover:bg-white/90 border border-white/80 rounded-full transition-all shadow-[0_4px_16px_rgba(15,23,42,0.04),inset_0_1px_1px_rgba(255,255,255,0.9)] active:scale-95"
               >
                 <span>Our Services</span>
               </motion.button>
@@ -110,24 +114,26 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               </button>
             </motion.div>
 
-            {/* 5. Trust Badges */}
+            {/* 5. Trust Badges in Glass Container */}
             <motion.div
               initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.72 }}
-              className="flex flex-wrap items-center gap-6 text-xs text-slate-500 pt-6 border-t border-slate-200/60 font-medium"
+              className="pt-6 border-t border-slate-200/60"
             >
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-sky-600" />
-                <span>250+ Major Productions</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-sky-600" />
-                <span>45+ National & Regional Expos</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-sky-600" />
-                <span>8 International Capitals</span>
+              <div className="inline-flex flex-wrap items-center gap-4 sm:gap-6 px-4 py-2.5 rounded-2xl bg-white/60 backdrop-blur-xl border border-white/80 shadow-[0_4px_20px_rgba(15,23,42,0.03),inset_0_1px_1px_rgba(255,255,255,0.9)] text-xs text-slate-600 font-medium">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-sky-600" />
+                  <span>250+ Major Productions</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-sky-600" />
+                  <span>45+ National & Regional Expos</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-sky-600" />
+                  <span>8 International Capitals</span>
+                </div>
               </div>
             </motion.div>
           </motion.div>
@@ -155,12 +161,12 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
               
-              {/* Floating Stage Spotlight Tag */}
+              {/* Floating Stage Spotlight Glass Tag */}
               <motion.div
                 initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.8, ease: EASE_PREMIUM }}
-                className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 shadow-lg flex items-center justify-between"
+                className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/80 backdrop-blur-xl border border-white/80 shadow-[0_12px_36px_rgba(15,23,42,0.15),inset_0_1px_1px_rgba(255,255,255,0.95)] flex items-center justify-between"
               >
                 <div>
                   <span className="text-xs font-bold text-sky-600 uppercase tracking-wider block">
@@ -172,7 +178,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 </div>
                 <button
                   onClick={() => onNavigate('portfolio')}
-                  className="px-3 py-1.5 rounded-xl bg-sky-50 text-sky-600 hover:bg-sky-600 hover:text-white font-semibold text-xs transition-colors"
+                  className="px-3 py-1.5 rounded-xl bg-sky-500/10 hover:bg-sky-600 hover:text-white text-sky-700 font-semibold text-xs transition-colors border border-sky-400/20 backdrop-blur-sm"
                 >
                   View
                 </button>
@@ -181,7 +187,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           </motion.div>
         </div>
 
-        {/* Quantitative Proof Strip with Staggered Entrance & Counting Animation */}
+        {/* Quantitative Proof Strip with Frosted Glass Metric Cards */}
         <motion.div
           initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -189,7 +195,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           className="mt-16 pt-10 border-t border-slate-200/80"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-white border border-sky-100 shadow-xs flex flex-col hover:border-sky-300 hover:shadow-md transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-white/65 backdrop-blur-xl border border-white/80 shadow-[0_8px_24px_rgba(15,23,42,0.04),inset_0_1px_1px_rgba(255,255,255,0.9)] flex flex-col hover:bg-white/85 hover:border-sky-300 hover:shadow-[0_12px_36px_rgba(8,124,255,0.12),inset_0_1px_1px_rgba(255,255,255,1)] transition-all duration-300">
               <span className="text-3xl sm:text-4xl font-extrabold text-sky-600 tracking-tight tabular-nums">
                 <AnimatedCounter to={18} suffix="+" />
               </span>
@@ -198,7 +204,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               </span>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-sky-100 shadow-xs flex flex-col hover:border-sky-300 hover:shadow-md transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-white/65 backdrop-blur-xl border border-white/80 shadow-[0_8px_24px_rgba(15,23,42,0.04),inset_0_1px_1px_rgba(255,255,255,0.9)] flex flex-col hover:bg-white/85 hover:border-sky-300 hover:shadow-[0_12px_36px_rgba(8,124,255,0.12),inset_0_1px_1px_rgba(255,255,255,1)] transition-all duration-300">
               <span className="text-3xl sm:text-4xl font-extrabold text-sky-600 tracking-tight tabular-nums">
                 <AnimatedCounter to={250} suffix="+" />
               </span>
@@ -207,7 +213,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               </span>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-sky-100 shadow-xs flex flex-col hover:border-sky-300 hover:shadow-md transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-white/65 backdrop-blur-xl border border-white/80 shadow-[0_8px_24px_rgba(15,23,42,0.04),inset_0_1px_1px_rgba(255,255,255,0.9)] flex flex-col hover:bg-white/85 hover:border-sky-300 hover:shadow-[0_12px_36px_rgba(8,124,255,0.12),inset_0_1px_1px_rgba(255,255,255,1)] transition-all duration-300">
               <span className="text-3xl sm:text-4xl font-extrabold text-sky-600 tracking-tight tabular-nums">
                 <AnimatedCounter to={45} suffix="+" />
               </span>
@@ -216,7 +222,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               </span>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-sky-100 shadow-xs flex flex-col hover:border-sky-300 hover:shadow-md transition-all duration-300">
+            <div className="p-6 rounded-2xl bg-white/65 backdrop-blur-xl border border-white/80 shadow-[0_8px_24px_rgba(15,23,42,0.04),inset_0_1px_1px_rgba(255,255,255,0.9)] flex flex-col hover:bg-white/85 hover:border-sky-300 hover:shadow-[0_12px_36px_rgba(8,124,255,0.12),inset_0_1px_1px_rgba(255,255,255,1)] transition-all duration-300">
               <span className="text-3xl sm:text-4xl font-extrabold text-sky-600 tracking-tight tabular-nums">
                 <AnimatedCounter to={8} />
               </span>
