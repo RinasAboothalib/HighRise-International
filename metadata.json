@@ -1,0 +1,6 @@
+{
+  "name": "Highrise International",
+  "description": "Highrise International — Premier event management, MICE, brand activations, and publishing powerhouse based in the Republic of Maldives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
