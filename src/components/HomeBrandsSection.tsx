@@ -7,10 +7,10 @@ import {
   SoundsOfMaldivesLogo,
   IslandChiefLogo,
   FloatingAsiaLogo,
-  SataLogo
+  SataLogo,
 } from './BrandLogos';
 import { BrandModal } from './BrandModal';
-import { ArrowUpRight, Sparkles } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
 import { ScrollReveal, MaskedHeading, StaggerContainer, StaggerItem, EASE_PREMIUM } from './motion/MotionUtils';
 
@@ -49,14 +49,6 @@ export const HomeBrandsSection: React.FC<HomeBrandsSectionProps> = ({ onInquireB
         {/* Section Header with Masked Typography */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <div className="max-w-3xl">
-            <ScrollReveal direction="up" delay={0.1}>
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sky-600 mb-3">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Highrise Proprietary Brands & Media</span>
-                <span aria-hidden="true" className="text-slate-300">/</span>
-                <span>Official Event Logos</span>
-              </div>
-            </ScrollReveal>
 
             <MaskedHeading as="h2" className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">
               Flagship Exhibitions, Cultural Icons & Publications.
