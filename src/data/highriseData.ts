@@ -38,6 +38,7 @@ export interface BrandItem {
   audience: string;
   keyStats: string[];
   websiteUrl?: string;
+  image?: string;
 }
 
 export interface TeamMember {
@@ -183,7 +184,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Curation, contracting, technical rider fulfillment, and stage direction for premier local and international talent.',
     fullDesc:
       'From traditional Boduberu percussion ensembles to international headlining musicians, keynote orators, and classical ensembles, Highrise handles every aspect of talent procurement and backstage coordination. We ensure artists are professionally cared for while delivering spellbinding performances aligned with your brand message.',
-    image: '/images/portfolio/portfolio_image_006.jpg',
+    image: '/images/service/service_image_005.jpg',
     capabilities: [
       'Talent Scouting & International Roster Procurement',
       'Legal Contract & Rider Negotiation',
@@ -490,6 +491,7 @@ export const BRANDS_AND_PUBLICATIONS: BrandItem[] = [
     type: 'Flagship Event',
     established: '2016',
     frequency: 'Annual',
+    image: '/images/brand/brand_image_004.jpg',
     summary:
       'South Asia’s most prestigious regional travel and hospitality award platform, spanning six participating countries.',
     fullDescription:
@@ -505,6 +507,7 @@ export const BRANDS_AND_PUBLICATIONS: BrandItem[] = [
     type: 'Trade Exhibition',
     established: '2013',
     frequency: 'Annual (14th Edition 2026)',
+    image: '/images/brand/brand_image_002.jpg',
     summary:
       'The premier Maldivian showcase for residential real estate, architecture, smart homes, and interior design.',
     fullDescription:
@@ -520,6 +523,7 @@ export const BRANDS_AND_PUBLICATIONS: BrandItem[] = [
     type: 'Trade Exhibition',
     established: '2016',
     frequency: 'Annual (8th Edition)',
+    image: '/images/brand/brand_image_003.jpg',
     summary:
       'The largest travel, holiday, and outbound tourism exhibition in the Maldives.',
     fullDescription:
@@ -535,6 +539,7 @@ export const BRANDS_AND_PUBLICATIONS: BrandItem[] = [
     type: 'Trade Exhibition',
     established: '2017',
     frequency: 'Annual (7th & 8th Editions)',
+    image: '/images/brand/brand_image_001.jpg',
     summary:
       'The leading annual exhibition dedicated to food service, culinary suppliers, beverage brands, and kitchen tech.',
     fullDescription:
@@ -550,6 +555,7 @@ export const BRANDS_AND_PUBLICATIONS: BrandItem[] = [
     type: 'Cultural Platform',
     established: '2011',
     frequency: 'International Tours',
+    image: '/images/brand/brand_image_006.jpg',
     summary:
       'An acclaimed international music and cultural concert series celebrating Maldivian talent on world stages.',
     fullDescription:
@@ -565,6 +571,7 @@ export const BRANDS_AND_PUBLICATIONS: BrandItem[] = [
     type: 'Publication & Media',
     established: '2016',
     frequency: 'Monthly (Print & Digital)',
+    image: '/images/brand/brand_image_007.jpg',
     summary:
       'The definitive monthly trade newspaper and digital portal dedicated to the Maldives tourism and luxury resort industry.',
     fullDescription:
@@ -580,6 +587,7 @@ export const BRANDS_AND_PUBLICATIONS: BrandItem[] = [
     type: 'Publication & Media',
     established: '2018',
     frequency: 'Quarterly & Digital Portal',
+    image: '/images/brand/brand_image_008.jpg',
     summary:
       'A specialized luxury media platform dedicated to liveaboards, marine expeditions, scuba diving, and ocean conservation.',
     fullDescription:

@@ -3,6 +3,7 @@ import { COMPANY_PROFILE } from '../data/highriseData';
 import { Target, Compass, Award, ShieldCheck, MapPin, Building2 } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
 import { ScrollReveal, MaskedHeading, EASE_PREMIUM } from './motion/MotionUtils';
+import { SafeImage } from './SafeImage';
 
 export const AboutSection: React.FC = () => {
   const shouldReduceMotion = useReducedMotion();
@@ -34,7 +35,7 @@ export const AboutSection: React.FC = () => {
         {/* Authentic Highrise Event & Production Showcase Banner */}
         <ScrollReveal direction="up" delay={0.1} className="mb-16">
           <div className="relative rounded-3xl overflow-hidden border border-sky-100 shadow-xl bg-slate-100 max-h-[480px]">
-            <img
+            <SafeImage
               src="/images/about/about_image_001.jpg"
               alt="Highrise International Production & Event Management Team"
               className="w-full h-full object-cover object-center max-h-[480px]"

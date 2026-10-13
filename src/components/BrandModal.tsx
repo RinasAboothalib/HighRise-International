@@ -10,6 +10,7 @@ import {
   FloatingAsiaLogo,
   SataLogo
 } from './BrandLogos';
+import { SafeImage } from './SafeImage';
 
 interface BrandModalProps {
   brand: BrandItem | null;
@@ -67,23 +68,12 @@ export const BrandModal: React.FC<BrandModalProps> = ({ brand, onClose, onInquir
             <div className="flex-1 flex items-center justify-center">
               {renderLogo()}
             </div>
-            {brand.id === 'fb-show' && (
-              <img src="/images/brand/brand_image_001.jpg" alt="F&B Show" className="h-28 w-auto rounded-xl object-contain shadow-xs bg-white p-2" />
-            )}
-            {brand.id === 'living-expo' && (
-              <img src="/images/brand/brand_image_002.jpg" alt="Living Expo" className="h-28 w-auto rounded-xl object-contain shadow-xs bg-white p-2" />
-            )}
-            {brand.id === 'vacations-expo' && (
-              <img src="/images/brand/brand_image_003.jpg" alt="Vacations Expo" className="h-28 w-auto rounded-xl object-contain shadow-xs bg-white p-2" />
-            )}
-            {brand.id === 'sounds-of-maldives' && (
-              <img src="/images/brand/brand_image_006.jpg" alt="Sounds of Maldives" className="h-28 w-auto rounded-xl object-contain shadow-xs bg-white p-2" />
-            )}
-            {brand.id === 'the-island-chief' && (
-              <img src="/images/brand/brand_image_007.jpg" alt="The Island Chief" className="h-28 w-auto rounded-xl object-contain shadow-xs bg-white p-2" />
-            )}
-            {brand.id === 'floating-asia' && (
-              <img src="/images/brand/brand_image_008.jpg" alt="Floating Asia" className="h-28 w-auto rounded-xl object-contain shadow-xs bg-white p-2" />
+            {brand.image && (
+              <SafeImage
+                src={brand.image}
+                alt={brand.name}
+                className="h-28 w-auto rounded-xl object-contain shadow-xs bg-white p-2"
+              />
             )}
           </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { PortfolioProject } from '../data/highriseData';
 import { X, MapPin, Calendar, Users, Award, ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { SafeImage } from './SafeImage';
 
 interface ProjectModalProps {
   project: PortfolioProject | null;
@@ -34,11 +35,11 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
         <div className="overflow-y-auto p-6 sm:p-8 space-y-8">
           {/* Main Visual Image with Curved Corners */}
           <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200">
-            <img
+            <SafeImage
               src={project.image}
               alt={project.title}
               className="w-full h-full object-cover"
-              referrerPolicy="no-referrer"
+              fallbackInitials={project.title.slice(0, 2).toUpperCase()}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">

@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { ArrowUpRight, CheckCircle2, ChevronDown } from 'lucide-react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'motion/react';
 import { EASE_PREMIUM, AnimatedCounter } from './motion/MotionUtils';
+import { getAssetUrl, handleImageError } from '../utils/imageUrl';
 
 interface HeroProps {
   onNavigate: (pageId: string) => void;
@@ -154,10 +155,11 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 initial={shouldReduceMotion ? { scale: 1 } : { scale: 1.06 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1.4, delay: 0.35, ease: EASE_PREMIUM }}
-                src="/images/hero/hero_stage_01.jpg"
+                src={getAssetUrl('/images/hero/hero_stage_01.jpg')}
                 alt="Highrise International Grand Gala Stage Production"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
+                onError={(e) => handleImageError(e, '/images/hero/hero_stage_01.jpg')}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
               

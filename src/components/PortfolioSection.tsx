@@ -4,6 +4,7 @@ import { Search, ArrowUpRight, MapPin, Eye } from 'lucide-react';
 import { ProjectModal } from './ProjectModal';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { ScrollReveal, MaskedHeading, EASE_PREMIUM } from './motion/MotionUtils';
+import { SafeImage } from './SafeImage';
 
 interface PortfolioSectionProps {
   onInquireProject: (projectTitle: string) => void;
@@ -159,11 +160,11 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onInquirePro
                       }`}
                       onClick={() => setActiveModalProject(project)}
                     >
-                      <img
+                      <SafeImage
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                        referrerPolicy="no-referrer"
+                        fallbackInitials={project.title.slice(0, 2).toUpperCase()}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
 

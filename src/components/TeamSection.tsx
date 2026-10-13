@@ -3,6 +3,7 @@ import { MANAGEMENT_TEAM, TeamMember } from '../data/highriseData';
 import { Mail, CheckCircle2, ChevronDown, ChevronUp, Search } from 'lucide-react';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { ScrollReveal, MaskedHeading, StaggerContainer, StaggerItem, EASE_PREMIUM } from './motion/MotionUtils';
+import { SafeImage } from './SafeImage';
 
 export const TeamSection: React.FC = () => {
   const [expandedMemberId, setExpandedMemberId] = useState<string | null>(null);
@@ -127,11 +128,11 @@ export const TeamSection: React.FC = () => {
                       <div className="flex items-start justify-between mb-6">
                         <div className="relative w-20 h-20 sm:w-22 sm:h-22 rounded-2xl overflow-hidden border-2 border-white shadow-md shadow-sky-950/10 bg-slate-100 shrink-0 group-hover:scale-105 group-hover:shadow-lg transition-transform duration-300">
                           {member.image ? (
-                            <img
+                            <SafeImage
                               src={member.image}
                               alt={member.name}
                               className="w-full h-full object-cover object-top"
-                              loading="lazy"
+                              fallbackInitials={member.name.split(' ').map((n) => n[0]).slice(0, 2).join('')}
                             />
                           ) : (
                             <div className="w-full h-full bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center text-sky-700 font-extrabold text-lg">

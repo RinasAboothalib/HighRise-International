@@ -3,6 +3,7 @@ import { PORTFOLIO_PROJECTS, PortfolioProject } from '../data/highriseData';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Eye, MapPin } from 'lucide-react';
 import { motion, useReducedMotion } from 'motion/react';
 import { EASE_PREMIUM, MaskedHeading, ScrollReveal } from './motion/MotionUtils';
+import { SafeImage } from './SafeImage';
 
 interface FeaturedHorizontalShowcaseProps {
   onSelectProject: (project: PortfolioProject) => void;
@@ -93,11 +94,11 @@ export const FeaturedHorizontalShowcase: React.FC<FeaturedHorizontalShowcaseProp
           >
             {/* Image Container with Zoom Reveal */}
             <div className="aspect-[16/10] overflow-hidden bg-slate-100 relative">
-              <img
+              <SafeImage
                 src={proj.image}
                 alt={proj.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                referrerPolicy="no-referrer"
+                fallbackInitials={proj.title.slice(0, 2).toUpperCase()}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-transparent" />
 

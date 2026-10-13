@@ -3,6 +3,8 @@ import { SERVICES } from '../data/highriseData';
 import { CheckCircle2, ChevronRight, Sparkles, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence, useReducedMotion } from 'motion/react';
 import { ScrollReveal, MaskedHeading, EASE_PREMIUM } from './motion/MotionUtils';
+import { SafeImage } from './SafeImage';
+import { getAssetUrl, handleImageError } from '../utils/imageUrl';
 
 interface ServicesSectionProps {
   onSelectServiceForInquiry?: (serviceTitle: string) => void;
@@ -59,11 +61,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                   <div className="flex items-center gap-3.5 sm:gap-4 overflow-hidden">
                     {/* Image Thumbnail */}
                     <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 border border-slate-200 shadow-xs bg-slate-100">
-                      <img
+                      <SafeImage
                         src={service.image}
                         alt={service.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
+                        fallbackInitials={service.number}
                       />
                       <div className="absolute inset-0 bg-slate-950/15" />
                       <span className="absolute bottom-1 left-1.5 font-mono text-[10px] font-bold text-white drop-shadow-sm">
@@ -127,9 +129,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                       initial={{ scale: 1.04, opacity: 0.85 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.45, ease: EASE_PREMIUM }}
-                      src={activeService.image}
+                      src={getAssetUrl(activeService.image)}
                       alt={activeService.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      referrerPolicy="no-referrer"
+                      onError={(e) => handleImageError(e, activeService.image)}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
                     <div className="absolute bottom-4 left-5 right-5 flex items-end justify-between">
