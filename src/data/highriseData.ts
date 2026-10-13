@@ -91,7 +91,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Strategic event ideation, experiential narrative design, and intellectual property formulation crafted from the ground up.',
     fullDesc:
       'Every transformative event begins with an unshakeable central idea. Highrise specializes in crafting original event concepts that capture cultural zeitgeists and fulfill commercial objectives. From inception to blueprint, we formulate unique thematic frameworks, audience journeys, and proprietary event formats tailored to private corporations, governmental bodies, and international trade consortia.',
-    image: '/images/service_concept_design_1791537960882.jpg',
+    image: '/images/service/service_image_001.jpg',
     capabilities: [
       'Original Event IP Formulation',
       'Strategic Thematic Architecture',
@@ -114,7 +114,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'High-velocity multi-channel marketing campaigns, media buying, public relations outreach, and digital activation.',
     fullDesc:
       'An exceptional event demands an engaged, qualified audience. Highrise orchestrates synchronized promotional campaigns spanning traditional press, digital performance marketing, regional influencer alliances, and targeted B2B outreach across the Maldives, Sri Lanka, and broader South Asian markets.',
-    image: '/images/service_promotional_campaign_1791537980920.jpg',
+    image: '/images/service/service_image_002.jpg',
     capabilities: [
       'Integrated Multi-Channel Campaign Planning',
       'Regional Media Buying & Outdoor Signage',
@@ -137,7 +137,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'End-to-end event branding, spatial 3D architecture, scenic stage engineering, and immersive graphic design.',
     fullDesc:
       'Highrise’s multidisciplinary design studio translates event concepts into tactile, visually arresting physical environments and digital touchpoints. We engineer custom stage architecture, exhibition pavilions, interactive branded booths, physical collateral, and high-resolution motion backdrops that command immediate respect.',
-    image: '/images/service_creative_staging_v2_1791537993343.jpg',
+    image: '/images/service/service_image_003.jpg',
     capabilities: [
       'Bespoke Brand Identity & Event Visual Systems',
       '3D Scenic Stage & Podium Architecture',
@@ -160,7 +160,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Turnkey on-ground production, venue sourcing, schedule coordination, protocol handling, and technical operations.',
     fullDesc:
       'We provide seamless, white-glove event production from day zero through post-event debrief. Our operations team manages vendor contracts, venue logistics, live stage cueing, VIP security protocol, government permits, hospitality, and state-of-the-art audiovisual rigging with zero compromise.',
-    image: '/images/service_event_ops_1791538029601.jpg',
+    image: '/images/service/service_image_004.jpg',
     capabilities: [
       'Turnkey On-Site Production & Technical Direction',
       'Rigorous Run-of-Show & Stage Cue Coordination',
@@ -183,7 +183,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Curation, contracting, technical rider fulfillment, and stage direction for premier local and international talent.',
     fullDesc:
       'From traditional Boduberu percussion ensembles to international headlining musicians, keynote orators, and classical ensembles, Highrise handles every aspect of talent procurement and backstage coordination. We ensure artists are professionally cared for while delivering spellbinding performances aligned with your brand message.',
-    image: '/images/service_artist_mgmt_1791538044470.jpg',
+    image: '/images/portfolio/portfolio_image_006.jpg',
     capabilities: [
       'Talent Scouting & International Roster Procurement',
       'Legal Contract & Rider Negotiation',
@@ -206,7 +206,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Curated corporate gifting, luxury bespoke branded apparel, sustainable promotional items, and attendee kits.',
     fullDesc:
       'Tangible touchpoints leave lasting memories. Highrise manufactures and sources bespoke event merchandise, from handcrafted sustainable executive gifting to custom commemorative medals, premium delegate bags, bespoke apparel, and branded digital peripherals that embody the quality of the occasion.',
-    image: '/images/service_merch_luxury_1791538061477.jpg',
+    image: '/images/service/service_image_006.jpg',
     capabilities: [
       'Luxury Executive Gifting & Commemorative Keepsakes',
       'Sustainable & Eco-Conscious Merchandise Procurement',
@@ -229,7 +229,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'High-level Meetings, Incentives, Conferences, and Exhibitions; keynote speaker forums, summits, and gala banquets.',
     fullDesc:
       'Highrise is the gold standard for MICE execution in the Maldives and South Asia. We engineer large-format conventions, international trade congresses, bilateral trade summits, and multi-day corporate retreats that bring together ministers, CEOs, and global trade delegations in world-class settings.',
-    image: '/images/service_mice_conclave_1791538101449.jpg',
+    image: '/images/service/service_image_007.jpg',
     capabilities: [
       'International Congress & Multi-Day Summit Production',
       'Bilateral Trade & Investment Forum Management',
@@ -257,7 +257,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     venue: 'Colombo, Sri Lanka · Bengaluru, India · Galle · Malé',
     location: 'South Asia Regional Circuit',
     scale: '800+ Regional Leaders · 6 Participating Nations',
-    image: '/images/portfolio_sata_stage_1791518782525.jpg',
+    image: '/images/portfolio/portfolio_image_004.jpg',
     featured: true,
     summary:
       'The premier recognition platform celebrating hospitality excellence across South Asia, featuring ministers, luxury hoteliers, and international delegates.',
@@ -279,7 +279,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     venue: 'Central Park, Hulhumalé / Dharubaaruge, Malé',
     location: 'Malé & Hulhumalé, Republic of Maldives',
     scale: '12,000+ Visitors · 60+ Exhibiting Brands',
-    image: '/images/portfolio_living_expo_1791518805944.jpg',
+    image: '/images/portfolio/portfolio_image_023.jpg',
     featured: true,
     summary:
       'The Maldives’ definitive annual property, interior design, smart living, and luxury lifestyle exhibition.',
@@ -301,7 +301,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     venue: 'Central Park, Hulhumalé',
     location: 'Hulhumalé, Republic of Maldives',
     scale: '45+ Exhibitors · Thousands of Outbound & Domestic Travelers',
-    image: '/images/portfolio_vacations_expo_1791518817844.jpg',
+    image: '/images/portfolio/portfolio_image_008.jpg',
     featured: true,
     summary:
       'The Maldives’ largest dedicated travel and tourism fair, connecting international travel boards, airlines, and local guesthouses.',
@@ -323,7 +323,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     venue: 'Dubai · Singapore · Kuala Lumpur · Colombo · Bengaluru · Malé',
     location: 'International Capitals Tour',
     scale: '50+ Performing Maldivian Artists · Global Audiences',
-    image: '/images/portfolio_sounds_maldives_1791518831574.jpg',
+    image: '/images/portfolio/portfolio_image_006.jpg',
     featured: true,
     summary:
       'An iconic global cultural showcase taking authentic Maldivian boduberu, contemporary music, and arts to world stages.',
@@ -345,7 +345,8 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     venue: 'Central Park / Hulhumalé Exhibition Pavilion',
     location: 'Hulhumalé, Republic of Maldives',
     scale: '70+ F&B Brands · Live Culinary Masterclasses',
-    image: '/images/hero_highrise_gala_1791518771053.jpg',
+    image: '/images/portfolio/portfolio_image_016.jpg',
+    featured: true,
     summary:
       'The premier culinary and food trade exhibition in the Maldives, connecting resort procurement teams with global suppliers.',
     description:
@@ -366,7 +367,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     venue: 'Premier Maldivian Luxury Resorts & Capital Venues',
     location: 'Republic of Maldives',
     scale: 'Top Luxury Resort Brands & Operators',
-    image: '/images/portfolio_sata_stage_1791518782525.jpg',
+    image: '/images/portfolio/portfolio_image_004.jpg',
     summary:
       'Highrise was the founding production partner to originate and manage the inaugural Maldives Travel Awards.',
     description:
@@ -379,45 +380,104 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ]
   },
   {
-    id: 'indian-expo-maldives',
-    title: 'Indian Expo Maldives',
-    client: 'Highrise Pvt Ltd in collaboration with Event Solutions',
+    id: 'asian-councils-forum',
+    title: '8th Asian Councils Forum',
+    client: 'Baa Atoll Council',
     category: 'Conferences & MICE',
-    year: 'Bilateral Trade Edition',
-    venue: 'Dharubaaruge Exhibition Centre, Malé',
-    location: 'Malé, Republic of Maldives',
-    scale: '100+ Indian & Maldivian Commercial Enterprises',
-    image: '/images/portfolio_living_expo_1791518805944.jpg',
+    year: '2024',
+    venue: 'Baa Atoll, Republic of Maldives',
+    location: 'Maldives',
+    scale: 'Regional Council Leaders & International Observers',
+    image: '/images/portfolio/portfolio_image_024.jpg',
+    featured: true,
     summary:
-      'A bilateral trade exhibition fostering commercial partnerships between Indian exporters and Maldivian business leaders.',
+      'Highrise delivered turnkey production and diplomatic stage coordination for the 8th Asian Councils Forum.',
     description:
-      'Produced in partnership with premier Indian event management firm Event Solutions, the Indian Expo brought together leading commercial banks (such as State Bank of India), manufacturing firms, healthcare providers, and consumer brands to foster direct trade corridors with the Maldives.',
+      'A prestigious inter-governmental council conference hosted in the Maldives, demanding rigorous protocol, simultaneous translation infrastructure, VIP security staging, and high-level council plenary coordination.',
     highlights: [
-      'High-profile diplomatic presence including Ambassadors and Ministry delegations',
-      'Structured B2B matchmaking sessions resulting in significant commercial supply agreements',
-      'Comprehensive customs clearance, freight coordination, and turnkey booth fabrication',
-      'Reinforced Highrise’s capability to deliver large-scale international bilateral trade expos'
+      'Diplomatic protocol and VIP delegation coordination',
+      'Custom stage architecture and plenary audiovisual systems',
+      'Seamless multi-day conference scheduling and broadcast management'
     ]
   },
   {
-    id: 'national-marine-boating-conclave',
-    title: 'National Marine & Boating Conclave',
-    client: 'Liveaboard Association of Maldives (LAM) / Ministry of Transport',
-    category: 'Conferences & MICE',
-    year: 'Conclave Series',
-    venue: 'Malé & Paradise Island Convention Centre',
-    location: 'Republic of Maldives',
-    scale: '200+ Safari Vessel Owners & Marine Engineers',
-    image: '/images/portfolio_vacations_expo_1791518817844.jpg',
+    id: 'highrise-15th-anniversary',
+    title: 'Highrise 15th Anniversary Grand Gala',
+    client: 'Highrise Group of Companies',
+    category: 'Gala & Awards',
+    year: '2024',
+    venue: 'Malé, Republic of Maldives',
+    location: 'Malé',
+    scale: 'Industry Veterans, Partners & Government Ministers',
+    image: '/images/portfolio/portfolio_image_019.jpg',
     summary:
-      'Strategic national policy and technical summit advancing marine safety, safari yacht tourism, and maritime logistics.',
+      'A landmark milestone celebration commemorating 15 years of industry-defining events across South Asia.',
     description:
-      'Drawing on Highrise’s deep industry roots with the Liveaboard Association of Maldives, this high-level conclave brought together shipbuilders, safari vessel proprietors, marine insurers, coast guard officials, and international marina developers for policy roundtables and technical symposiums.',
+      'Commemorating fifteen years of pioneering Maldivian and regional events, this gala gathered tourism pioneers, media leaders, and corporate clients for an evening of retrospective showcases, honorary awards, and live cultural performances.',
     highlights: [
-      'Drafting of key policy recommendations presented to national transport authorities',
-      'Technical display of marine engines, satellite communications, and watermakers',
-      'Keynote addresses by international maritime safety experts',
-      'Exclusive networking dinner celebrating seafaring heritage and liveaboard tourism'
+      'Honoring 15 years of continuous event innovation',
+      'Multi-tiered stage and acoustic production in Malé',
+      'Attended by national ministers and leading corporate partners'
+    ]
+  },
+  {
+    id: 'dinner-lord-marland',
+    title: 'State Dinner in Honor of Lord J. Marland',
+    client: 'HARIM / Commonwealth Enterprise and Investment Council',
+    category: 'Gala & Awards',
+    year: '2024',
+    venue: 'Kurumba Maldives',
+    location: 'Republic of Maldives',
+    scale: 'High-Level Bilateral Delegation',
+    image: '/images/portfolio/portfolio_image_018.jpg',
+    summary:
+      'Exclusive state banquet and networking reception in honor of the Chairman of the Commonwealth Enterprise and Investment Council.',
+    description:
+      'Highrise directed the executive banquet production, lighting, floral architecture, and bilateral protocol for this private diplomatic engagement celebrating international investment corridors.',
+    highlights: [
+      'High-level diplomatic dining protocol and seating design',
+      'Scenic lighting and acoustic stage setting',
+      'Executive service management and private security coordination'
+    ]
+  },
+  {
+    id: 'infinity-pro-launch',
+    title: 'Infinity Pro High Tea & Product Launch',
+    client: 'Oceans End / Fenesta',
+    category: 'Expos & Trade Shows',
+    year: '2024',
+    venue: 'Malé, Maldives',
+    location: 'Malé',
+    scale: 'Architects, Contractors & Property Developers',
+    image: '/images/portfolio/portfolio_image_022.jpg',
+    summary:
+      'Exclusive product reveal and luxury high tea for premium building technology and architectural systems.',
+    description:
+      'Highrise staged the turnkey launch experience for Infinity Pro architectural solutions, curating an upscale high tea environment with interactive sample pods and technical presentations.',
+    highlights: [
+      'Turnkey venue transformation and branding installation',
+      'Curated attendance of leading island architects and developers',
+      'Interactive material display lounges and media coverage'
+    ]
+  },
+  {
+    id: 'visiting-guide-launch',
+    title: 'Launching of Maldives Visiting Guide',
+    client: 'Highrise Publications',
+    category: 'Conferences & MICE',
+    year: '2024',
+    venue: 'Capital City Launch Arena',
+    location: 'Republic of Maldives',
+    scale: 'Tourism Officials, Hoteliers & Press',
+    image: '/images/portfolio/portfolio_image_020.jpg',
+    summary:
+      'Official unveiling ceremony for the definitive national tourism publication and visitor directory.',
+    description:
+      'A premier media launch event introducing the latest edition of the official visitor guide, bringing together tourism board directors, airline executives, and hospitality media.',
+    highlights: [
+      'Official unveiling with ceremonial keynotes and press kits',
+      'Direct distribution to resort chains and airline partners',
+      'Extensive media syndication across Maldives and South Asia'
     ]
   }
 ];
@@ -537,6 +597,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Co-Founder & Director of Marketing & PR',
     category: 'Executive Leadership',
     email: 'ismail@highriseint.com',
+    image: '/images/management/management_image_001.png',
     experience: '20+ Years in Marketing, Event Production & Public Relations',
     bio:
       'Widely recognized as one of the Maldives’ foremost event visionaries and marketing entrepreneurs, Ismail Hameed ("Highrise Issey") co-founded Highrise in 2007. Over two decades, he has conceptualized iconic regional brands including the South Asian Travel Awards (SATA), Vacations Expo, and the Sounds of Maldives international tours. He previously served as President and Co-Founder of the Liveaboard Association of Maldives (LAM) and was honored with the National Youth Award in Event Management (2014) and "Entrepreneur of the Year" at the Maldives Business Awards (2019).',
@@ -553,6 +614,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Managing Director & Co-Founder',
     category: 'Executive Leadership',
     email: 'shifraz@highriseint.com',
+    image: '/images/management/management_image_002.png',
     experience: '18+ Years in Operational Leadership & Technical Event Engineering',
     bio:
       'Co-founding Highrise alongside Ismail Hameed, Ismail Shifraz directs the company’s corporate operations, international logistical frameworks, and technical event engineering. Becoming Managing Director in 2008, his meticulous operational governance ensures that complex multi-day expos and high-security regional galas operate with surgical precision across Maldives, Sri Lanka, and regional venues.',
@@ -569,6 +631,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Chief Financial Officer (CFO)',
     category: 'Finance & Operations',
     email: 'niuma@highriseint.com',
+    image: '/images/management/management_image_003.png',
     experience: '18+ Years in Corporate Financial Management & Fiscal Strategy',
     bio:
       'Mrs. Mariyam Niuma joined Highrise as Finance Director in January 2008 and currently serves as Chief Financial Officer for Highrise Group. With over 18 years in corporate finance and accounts, having previously served as Senior Accountant at Lintel Investments, she directs corporate treasury, auditing, and international budget structuring across all group entities.',
@@ -585,6 +648,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Director, Sales & Marketing',
     category: 'Commercial & PR',
     email: 'maaisha@highriseint.com',
+    image: '/images/management/management_image_005.png',
     experience: '10+ Years in Commercial Partnerships & Brand Sponsorship',
     bio:
       'Ms. Mariyam Maaisha Shujau (Maai) joined Highrise in 2017 and serves as Director of Sales & Marketing for Highrise Group and Deputy Director of Communications for South Asian Travel Awards (SATA). Formerly with Maldives Airports Company Limited (MACL) and Public Service Media (PSM), she is also an executive board member at the National Boating Association of Maldives.',
@@ -601,6 +665,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Head of Finance & Administration',
     category: 'Finance & Operations',
     email: 'yusra@highriseint.com',
+    image: '/images/management/management_image_006.png',
     experience: '9+ Years in Administrative Architecture & Operational Control',
     bio:
       'Ms. Yusra Naseer is the Head of Finance & Admin at Highrise Group of Companies. Having served in finance and accounts management across all group companies including Highrise Pvt Ltd, Maldives Publications, SATA, and The Trading Company, she oversees internal operations, vendor settlement protocols, and statutory compliance.',
@@ -617,6 +682,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Corporate Communications Manager',
     category: 'Commercial & PR',
     email: 'zeena@highriseint.com',
+    image: '/images/management/management_image_007.png',
     experience: '8+ Years in Media Relations, Editorial Direction & Corporate PR',
     bio:
       'Ms. Mariyam Zeena joined Highrise in 2019 and serves as Corporate Communications Manager and Content Executive for Highrise and Maldives Publications. Juggling high-level writing and editorial contributions with academic excellence, she spearheads press releases, stakeholder communications, and media partnerships.',
@@ -633,6 +699,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Manager, Sales & Marketing — Events',
     category: 'Commercial & PR',
     email: 'sales@highriseint.com',
+    image: '/images/management/management_image_008.png',
     experience: '8+ Years in B2B Event Marketing & Brand Activation Sales',
     bio:
       'Mohamed Hassaan leads sales and marketing for Highrise’s flagship consumer and trade events, including the F&B Show, Maldives Living Expo, and Vacations Expo. He works directly with national sponsors, international exhibitors, and hospitality brands to construct high-visibility showcase presences.',
@@ -649,6 +716,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Lead Graphic & Production Designer',
     category: 'Design & Creative',
     email: 'design@highriseint.com',
+    image: '/images/management/management_image_013.png',
     experience: '9+ Years in Visual Identity, Stage 3D Renders & Publication Art Direction',
     bio:
       'Ali Nawaaz directs graphic design, exhibition branding, visual identities, and promotional collateral for all Highrise projects and publications. From stage 3D mockups and award branding to luxury editorial layouts, his design direction sets the aesthetic tone for Highrise’s regional productions.',
@@ -665,6 +733,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Creative Consultant',
     category: 'Design & Creative',
     email: 'admin@highriseint.com',
+    image: '/images/management/management_image_014.png',
     experience: '15+ Years in Experiential Concepts, Creative Staging & Cultural Direction',
     bio:
       'Richard Mendonca serves as Creative Consultant to Highrise Group, infusing international artistic sensibilities, experiential performance direction, and innovative show-flow choreography into flagship gala dinners, music showcases, and cross-cultural celebrations.',
@@ -681,6 +750,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Operations & Event Assistant',
     category: 'Finance & Operations',
     email: 'admin@highriseint.com',
+    image: '/images/management/management_image_016.jpg',
     experience: '7+ Years in Logistics Staging, Equipment Handling & On-Site Support',
     bio:
       'Shahidudin provides hands-on ground support, equipment coordination, and venue logistics during high-pressure exhibition builds and gala stagings. His reliability ensures smooth back-of-house operations across every Maldivian event venue.',
@@ -697,6 +767,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Marketing Executive, South East Asia — Thailand',
     category: 'Regional Representation',
     email: 'thai@highriseint.com',
+    image: '/images/management/management_image_017.png',
     experience: '10+ Years in ASEAN Hospitality Marketing & Trade Fair Promotion',
     bio:
       'Based in Bangkok, Naret coordinates South East Asian commercial representation for Highrise exhibitions and awards. He connects Thai travel agencies, hotel suppliers, and food & beverage manufacturers with Maldivian trade fairs.',
@@ -713,6 +784,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Director, MICE — India',
     category: 'Regional Representation',
     email: 'mice@highriseint.com',
+    image: '/images/management/management_image_018.png',
     experience: '16+ Years in Indian MICE, Corporate Conclaves & South Asian Travel Trade',
     bio:
       'Suraj Khan spearheads Highrise’s MICE initiatives across the Indian subcontinent. Connecting corporate houses, event agencies, and hospitality leaders from Mumbai, Delhi, and Bangalore with Maldivian and regional conclaves, he expands SATA and Highrise’s presence in India.',
@@ -729,6 +801,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'SATA Regional Representative — Nepal',
     category: 'Regional Representation',
     email: 'sales@highriseint.com',
+    image: '/images/management/management_image_019.png',
     experience: '15+ Years in Himalayan Tourism, Hospitality Promotion & Regional Trade',
     bio:
       'Representing the South Asian Travel Awards (SATA) across Nepal, Prashant coordinates nominations, jury visits, and national hospitality endorsements from leading hotel associations and tourism bodies in Kathmandu and Pokhara.',
@@ -745,6 +818,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'SATA Regional Representative — Nepal',
     category: 'Regional Representation',
     email: 'sales@highriseint.com',
+    image: '/images/management/management_image_020.png',
     experience: '14+ Years in Hospitality Management & Regional Travel Conclaves',
     bio:
       'Serving as regional liaison for SATA in Nepal alongside Prashant, Tekendra fosters partnerships between the Nepalese travel sector, national airlines, and the broader South Asian hospitality community, ensuring strong institutional representation at the annual awards.',
@@ -761,6 +835,7 @@ export const MANAGEMENT_TEAM: TeamMember[] = [
     role: 'Assistant Editor — The Island Chief & Publications',
     category: 'Editorial & Media',
     email: 'editor@theislandchief.com',
+    image: '/images/management/management_image_022.jpg',
     experience: '8+ Years in Hospitality Journalism, Media Publishing & Feature Writing',
     bio:
       'Serving as Assistant Editor at Highrise Pvt Ltd and The Island Chief, Adam Manaf Ali drives industry reporting, resort reviews, aviation features, and regional trade journalism. His editorial leadership ensures timely, high-impact reporting across Highrise’s print and digital publications, connecting key Maldivian and international hospitality stakeholders.',

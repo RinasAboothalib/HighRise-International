@@ -31,6 +31,26 @@ export const AboutSection: React.FC = () => {
           </ScrollReveal>
         </div>
 
+        {/* Authentic Highrise Event & Production Showcase Banner */}
+        <ScrollReveal direction="up" delay={0.1} className="mb-16">
+          <div className="relative rounded-3xl overflow-hidden border border-sky-100 shadow-xl bg-slate-100 max-h-[480px]">
+            <img
+              src="/images/about/about_image_001.jpg"
+              alt="Highrise International Production & Event Management Team"
+              className="w-full h-full object-cover object-center max-h-[480px]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/20 to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 text-white max-w-xl">
+              <span className="text-xs uppercase tracking-widest font-semibold text-sky-400 block mb-1">
+                Authentic Highrise Operations
+              </span>
+              <p className="text-lg sm:text-xl font-bold leading-snug">
+                Pioneering Maldivian and South Asian Events for Over 18 Years
+              </p>
+            </div>
+          </div>
+        </ScrollReveal>
+
         {/* Vision & Mission Grid with Curved Corners */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {/* Mission Card */}
